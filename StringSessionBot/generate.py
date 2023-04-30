@@ -76,10 +76,12 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
     if await cancelled(api_hash_msg):
         return
     api_hash = api_hash_msg.text
-    if not is_bot:
-        t = "Now please send your `PHONE_NUMBER` along with the country code. \nExample : `+19876543210`'"
-    else:
-        t = "Now please send your `BOT_TOKEN` \nExample : `12345:abcdefghijklmnopqrstuvwxyz`'"
+    t = (
+        "Now please send your `BOT_TOKEN` \nExample : `12345:abcdefghijklmnopqrstuvwxyz`'"
+        if is_bot
+        else "Now please send your `PHONE_NUMBER` along with the country code. \nExample : `+19876543210`'"
+    )
+
     phone_number_msg = await bot.ask(user_id, t, filters=filters.text)
     if await cancelled(phone_number_msg):
         return
