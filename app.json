@@ -51,6 +51,10 @@
       "description": "Add username/id of a channel/group",
       "required": false,
       "value": ""
+    },
+    "MONGO_DB_URL": {
+      "description": "Add Mongo url from here",
+      "required": false,
     }
   }
 }
