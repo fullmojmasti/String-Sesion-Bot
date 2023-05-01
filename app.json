@@ -1,4 +1,4 @@
-{
+
   "name": "Pyrogram String Session Generator",
   "description": "Telegram bot to generate pyrogram string session",
   "logo": "https://telegra.ph/file/7ec22c82f580a334dd13e.jpg",
@@ -52,7 +52,7 @@
       "required": false,
       "value": ""
     },
-    "DATABASE_URL": {
+    "sql_database": {
       "description": "Add Mongo url from here",
       "required": false,
      }
