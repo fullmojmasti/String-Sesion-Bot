@@ -55,6 +55,11 @@
     "MONGO_DB_URL": {
       "description": "Add Mongo url from here",
       "required": false,
+     }
+    },
+    "addons": [
+        {
+            "plan": "heroku-postgresql"
     }
   }
 }
