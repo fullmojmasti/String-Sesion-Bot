@@ -52,7 +52,7 @@
       "required": false,
       "value": ""
     },
-    "MONGO_DB_URL": {
+    "DATABASE_URL": {
       "description": "Add Mongo url from here",
       "required": false,
      }
